@@ -46,7 +46,7 @@ def gematria_ktana_to_int(name):
     for latter in name:
         sum += MAP_DICT[char][1]
     sum = str(sum) 
-    return int(sum[0]) + int(sum[1]) if len(sum) >= 2 else sum
+    return int(sum[0]) + int(sum[1]) if len(sum) >= 2 else int(sum)
 
 
 def gematria_to_int(string):
